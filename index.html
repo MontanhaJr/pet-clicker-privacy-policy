@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <title>Pet Clicker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pet Clicker is a casual mobile game available on Google Play.">
+    <meta name="description" content="Pet Clicker is a simple clicker app designed to help with pet training.">
     <style>
         body {
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
                          Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: #ffffff;
+            background: #f7f8fa;
+            color: #333;
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -19,75 +19,113 @@
         }
 
         .container {
-            background: rgba(0, 0, 0, 0.25);
-            border-radius: 16px;
+            background: #ffffff;
+            border-radius: 20px;
             padding: 40px 32px;
             max-width: 480px;
             width: 90%;
             text-align: center;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 20px;
         }
 
         h1 {
-            margin-top: 0;
-            font-size: 2.4rem;
-            letter-spacing: 1px;
+            margin: 0;
+            font-size: 2.2rem;
+            color: #e85b5b;
         }
 
         p {
+            margin-top: 16px;
             font-size: 1rem;
             line-height: 1.6;
-            opacity: 0.95;
+            color: #555;
         }
 
         .links {
             margin-top: 32px;
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 14px;
         }
 
-        a {
-            text-decoration: none;
-            padding: 12px 16px;
-            border-radius: 10px;
-            background: #ffffff;
-            color: #2575fc;
+        .play-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 18px;
+            border-radius: 12px;
+            background: #e85b5b;
+            color: #ffffff;
             font-weight: 600;
+            text-decoration: none;
             transition: transform 0.15s ease, box-shadow 0.15s ease;
         }
 
-        a:hover {
+        .play-button img {
+            width: 22px;
+            height: 22px;
+        }
+
+        .play-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+            box-shadow: 0 8px 20px rgba(232,91,91,0.4);
+        }
+
+        .secondary-link {
+            text-decoration: none;
+            font-weight: 600;
+            color: #e85b5b;
+        }
+
+        .secondary-link:hover {
+            text-decoration: underline;
         }
 
         footer {
             margin-top: 28px;
             font-size: 0.85rem;
-            opacity: 0.8;
+            color: #888;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
+    <img src="logo.png" alt="Pet Clicker logo" class="logo">
+
     <h1>Pet Clicker</h1>
 
     <p>
-        Pet Clicker is a casual clicker-style mobile game available on Google Play.
-        The app is designed for entertainment purposes and is supported by ads.
+        Pet Clicker is a simple and practical clicker app designed to support
+        the training of pets. It helps reinforce positive behavior through
+        consistent sound-based feedback.
     </p>
 
     <div class="links">
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="https://play.google.com/store/apps/details?id=com.montanhajr.petclicker" target="_blank" rel="noopener">
-            View on Google Play
+        <a
+            class="play-button"
+            href="https://play.google.com/store/apps/details?id=com.montanhajr.petclicker"
+            target="_blank"
+            rel="noopener"
+        >
+            <img src="google-play.png" alt="Google Play">
+            Get it on Google Play
+        </a>
+
+        <a class="secondary-link" href="privacy-policy.html">
+            Privacy Policy
         </a>
     </div>
 
     <footer>
-        © 2026 Mauricio Montanha Junior
+        © 2026 MontanhaJr Dev
     </footer>
 </div>
 
